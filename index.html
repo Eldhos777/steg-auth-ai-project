@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StegAuth – AI Image Authentication System</title>
+    <meta name="description" content="Embed invisible encrypted metadata in AI-generated images using LSB steganography. Verify authenticity and detect tampering instantly." />
+    <meta name="author" content="StegAuth" />
+    <meta property="og:title" content="StegAuth – AI Image Authentication" />
+    <meta property="og:description" content="Secure AI image authentication using invisible steganography, encryption, and hashing." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved === 'dark' || saved === 'light' ? saved : (prefersDark ? 'dark' : 'light');
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
